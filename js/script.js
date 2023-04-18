@@ -46,7 +46,6 @@ const personalMovieDB ={
     privat: false
 };
 
-
 function rememberMyFilms() {
     for(let i = 0; i < 2; i++) {
         const a = prompt('Один из последних просмотренных фильмов?', ''),
@@ -78,5 +77,18 @@ function detectPersonalLevel() {
 
 detectPersonalLevel();
 
-console.log(personalMovieDB);
+// function showMyDB() {
+//     if (personalMovieDB.privat != true) {
+//         console.log(personalMovieDB)
+//     }
+// }
+
+// showMyDB();
+
+function showMyDB (hidden) {
+    if (!hidden) {
+        console.log(personalMovieDB);
+    }
+}
+showMyDB(personalMovieDB.privat);
 
