@@ -99,7 +99,7 @@ function writeYourGenres() {
 }
 writeYourGenres();
 
-// Решение преподавателя (создать отдельную const)
+// Решение преподавателя (с отдельной const, но это не обязательно)
 
 // function writeYourGenres() {
 //     for(let i = 1; i <= 3; i++) {
